@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tipos de daatos y cariables</title>
+</head>
+<body>
+    
+    <script>
+        // COMENTARIOS:
+        // Soy un comentario (no cuento como código) (un comentario por linea)
+
+        /* soy otro comentario pero a diferencia del anerior la (/*) 
+        me ayudan a abarcar varias lineas; esto quiere decir 
+        que es un comentario multilineas y para finalizar utilizamos 
+        la misma sintxis pero inversa */
+
+        /* VALORES: todos los valores son convertidos a bits (1 y 0)
+        -> cada valor (dato) tiene un tipo que determina el rol
+            que juega un valor en nuestro programa;
+        -> JS tiene 6 tipos de de datos básicos:
+         -NUMEROS (Numbers)
+         -STRING (cadenas o textos) (van entre comillas)
+         -BOOLEANOS (true/false) (1/0)
+         -FUNCIONES (argumentos, return)
+         -OBJETOS
+         -INDEFINIDOS. */
+
+         8
+         8.777
+         'te amo aldo daniel'
+        
+         /*VARIABLES: almacenan valores que pueden ser utilizados
+          posteriormente. El valor de una variable puede cambiar (variar)
+          durante la ejecucion del programa. */
+
+       // var permite que la sentencia se defina una variable
+        var almacena = 9 + 10; // el ; indica que finaliza la sentencia
+        /* var es una palabra clave (keyword): no pueden ser utilizadas
+        como nombres de variables */
+        console.log(almacena); /* para ver el resultado de evaluar algo o el 
+        contenido de una variable en la consola del navegador */
+
+        // TIPOS DE DATOS
+        // NUMEROS (numbers): enteros, flotantes
+        var entero = 7;
+        console.log('Valor del tipo entero: ' + entero); /* El resultado de
+        utilizar el oetador + entre una string y un numero = concatenar*/
+        var flotante = 6.55
+        console.log('valor del tipo flotante: ' + flotante);
+
+        // CADENAS DE TEXTO (string): van entre comilla ''
+        var caracteres = 'esclamkjbñldfb';
+        console.log('valor del tipo string: ' + caracteres);
+        var num_string1 = '10';
+        var num_string2 = '20';
+        console.log('concatena: ' + num_string1 + num_string2);
+
+        /* BOOLEANOS: Sólo pueden contener uno de los valores
+        verdadero (true) o falso (false) (1 y 0) */
+        var boolfalse = false;
+        var booltrue = true;
+        console.log('valor del tipo booleano: ' + boolfalse);
+        console.log('valor del tipo booleano: ' + booltrue);
+
+    </script>
+
+</body>
+</html>

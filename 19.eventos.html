@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19.>Eventos del dom</title>
+</head>
+<body>
+    <!--<button id="boton">Boton</button>-->
+    <a id="boton" href="http://falconmasters.com">falconmasters</a>
+    <input type="text" id="input">
+    <script>
+        (function() {
+            var saludo = function(e){
+                console.log('te amo aldodaniel!!')
+                e.preventDefault();
+            };
+
+           /* var saludo2 = function(){
+                console.log('como estas!')
+            };*/
+
+
+            var botont = document.getElementById('boton')
+            boton.addEventListener('click', saludo);
+           /* boton.addEventListener('click', saludo2);
+            boton.removeEventListener('click', saludo2);*/
+        }())
+    </script>
+</body>
+</html>

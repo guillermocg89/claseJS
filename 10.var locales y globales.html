@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variantes locales y globales</title>
+</head>
+<body>
+    <script>
+
+     //VARIABLE GLOBLAL.
+
+     /*  var x = 'ptogramacion';
+        function local(){
+            document.write('a mi me gusta la ' + x + '<br/>');
+        }
+        local ();
+        document.write('a mi no me gusta la ' + x + '<br/>') */
+
+     //VARIABLE LOCAL
+          var Y = 1 ; // variable global.
+
+         function local(){
+            var x = 'ptogramacion'; /*todo lo que este fuera de la función {} no
+            lo acojerá*/
+            document.write ('a mi me gusta la ' + x + '<br/>');
+         } ;
+         local ();
+         document.write('a mi no me gusta la ' + x + '<br/>') ;  
+
+    </script>
+</body>
+</html>
