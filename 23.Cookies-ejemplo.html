@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies-ejemplo</title>
+</head>
+<body>
+    <button type="button" id="ver todas">ver todas las cookies</button>
+    <button type="button" id="crearCookie1">crear cookie</button>
+    <button type="button" id="crearCookie2">crear cookie</button>
+    <button type="button" id="borrarCookie1">borrar cookie</button>
+    <button type="button" id="borrarCookie2">borrar cookie</button>
+    <script>
+        document.getElementById('verTodas').addEventListener('click',verTodas);
+        document.getElementById('crearCookie1').addEventListener('click', crearCookie);
+        document.getElementById('crearCookie2').addEventListener('click', crearCookie);
+        document.getElementById('borrarCookie1').addEventListener('click', borrarCookie);
+        document.getElementById('borrarCookie2').addEventListener('click', borrarCookie);
+            function verTodas(){
+                alert(document.cookie);
+            }
+            function crearCookie(e){
+                if(!e) e = window.event;
+                if (e.target.id =='crearCookie1')
+                document.cookie ='nombre = Aldo';
+                else if(e.target.id =='crearCookie2')
+                document.cookie ='apellido = Castrillon';
+            }
+
+            function borrarCookie(e){
+                if(!e) e = window.event;
+                if (e.target.id =='borrarCookie1')
+                document.cookie ='nombre =; expires=thu, 01 Jan 1970 00:00:00 UTC;';
+                else if(e.target.id =='borrarCookie2')
+                document.cookie ='apellido = ; expires=thu, 01 Jan 1970 00:00:00 UTC;';
+            }
+    </script>
+</body>
+</html>

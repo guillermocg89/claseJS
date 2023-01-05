@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almacenamiento local Con HTMLS</title>
+    <style>
+        *{
+            font-family: Helvetica;
+        }
+    </style>
+    <script>
+        function guardar(){
+            var texto = document.getElementById('texto_a_guardar').value;
+            localStorage.setItem('texto_a_guardar', texto);
+        }
+        function ver_dato(){
+            document.getElementById("texto_recuperado").value = localStorage.getItem('texto_a_guardar')
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Almacenamiento local Con HTML5</h1>
+    <label>Ingrese Un Texto</label><br>
+    <input type="text" id="texto_a_guardar"><br>
+    <label>Texto Recuperado</label><br>
+    <input type="text" id="texto_recuperado"><br>
+    <input type="button" value="Guardar" onclick="guardar();">
+    <input type="button" value="Ver Datos" onclick="ver_dato();">
+
+</body>
+</html>

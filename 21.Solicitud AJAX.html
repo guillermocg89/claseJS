@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>solicitud AJAX</title>
+</head>
+<body>
+    <BUtton id="boton">cargar sitio</BUtton>
+    <div id="response">
+        
+    </div>
+    <SCript>
+        function AJAX(){
+            const http = new XMLHttpRequest();
+            const url = 'file:///C:/Users/demo/course-programacion/claseJS/Javascript/22pagina.html';
+            http.onreadystatechange = function(){
+                if( this.readyState == 4 && this.status == 200){
+                    console.log(this.responseText);
+                    document.getElementById('respons').innerHTML = this.responseText;
+                }
+            }
+            http.open('GET', url);
+            http.send();
+        }
+        document.getElementById('boton').addEventListener('click', function(){
+            AJAX();
+        });
+    </SCript>
+</body>
+</html>
